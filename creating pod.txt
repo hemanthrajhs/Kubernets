@@ -1,0 +1,4 @@
+1-->How to check connectivity between the user and server  
+      Command: kubectl.exe cluster-info
+2-->How to launch the pod with a run commandoSYNTAX:  
+       kubectl.exe run (Pod name ) (image name)
