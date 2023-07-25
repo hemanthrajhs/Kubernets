@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mount-vol-pod
+spec:
+  volumes:
+  - name: v1
+    persistentVolumeClaim:
+      claimName: myhemanthpvc
+  containers:
+  - name: c1
+    image: vimal13/apache-webserver-php
+    volumeMounts:
+    - name: v1
+      mountPath: /var/www/data
+
