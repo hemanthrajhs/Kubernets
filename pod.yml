@@ -1,11 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp
-  labels:
-    app: myapp
+  name: pod1
 spec:
   containers:
-  - name: myapp
-    image: vimal13/apache-webserver-php
+    - name: podcont
+      image: vimal13/apache-webserver-php
    
